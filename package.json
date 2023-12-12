@@ -19,5 +19,8 @@
   "homepage": "https://github.com/fifkapetr/cypress_podzim2023_actions#readme",
   "devDependencies": {
     "cypress": "^13.6.1"
+  },
+  "dependencies": {
+    "@cypress/grep": "^4.0.1"
   }
 }
