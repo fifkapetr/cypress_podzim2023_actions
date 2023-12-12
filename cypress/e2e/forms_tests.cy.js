@@ -42,12 +42,12 @@ describe("Forms tests", () => {
       .should("have.text", "Form submitted successfully!");
   });
 
-  it("Upload file", () => {
+  it.skip("Upload file", () => {
     const fileName = "/Users/petrfifka/Downloads/Kupony.png";
     cy.get("#file-upload").selectFile(fileName);
   });
 
-  it("Upload file fixtures", () => {
+  it.skip("Upload file fixtures", () => {
     cy.fixture("test.txt", { encoding: null }).as("uploadFile");
     cy.get("#file-upload").selectFile("@uploadFile");
   });

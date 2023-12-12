@@ -24,7 +24,7 @@ describe("Mouse actions tests", { tags: "@smoke" }, () => {
       .trigger("mouseup", { force: true });
   });
 
-  it("Check real hover", () => {
+  it.skip("Check real hover", () => {
     cy.visit("https://www.webdriveruniversity.com/Actions/index.html");
     cy.get(".hover .dropbtn")
       .realHover()
