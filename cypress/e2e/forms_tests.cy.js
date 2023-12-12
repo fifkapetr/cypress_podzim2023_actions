@@ -9,7 +9,7 @@ describe("Forms tests", () => {
     cy.get("#premium").should("not.be.checked");
   });
 
-  it("Check 2 interests", { tags: "@smoke" }, () => {
+  it("Check 2 interests", () => {
     cy.get('input[name="interests[]"]').check(["sports", "reading"]);
     cy.get("#interests-sports").should("be.checked");
     cy.get("#interests-reading").should("be.checked");
