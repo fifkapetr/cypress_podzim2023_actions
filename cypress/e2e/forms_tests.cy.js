@@ -3,7 +3,7 @@ describe("Forms tests", () => {
     cy.visit("http://tredgate.com/webtrain/registration.html");
   });
 
-  it("Check Radio button", () => {
+  it("Check Radio button", { tags: "@smoke" }, () => {
     cy.get("input[name='subscription']").check("basic");
     cy.get("#basic").should("be.checked");
     cy.get("#premium").should("not.be.checked");
